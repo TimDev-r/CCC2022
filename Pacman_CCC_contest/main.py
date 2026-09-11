@@ -139,14 +139,14 @@ if answer is True:
             break
         i_counter += 1
 
-counter_pidor = 0
+step_counter = 0
 if answer is True:
     print(counter, "YES")
 else:
     for direction in movement:
         print("i_counter: ", i_counter)
-        print("counter_pidor: ", counter_pidor)
-        if counter_pidor == i_counter:
+        print("step_counter: ", step_counter)
+        if step_counter == i_counter:
             print(counter, "NO")
             exit()
         else:
@@ -185,4 +185,4 @@ else:
                     counter += 1
                     # print(pX, pY)
                 boardMatrix[pX][pY] = "E"
-        counter_pidor += 1
+        step_counter += 1
